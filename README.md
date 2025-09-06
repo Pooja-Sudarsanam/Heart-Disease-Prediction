@@ -20,18 +20,6 @@ It uses the **UCI Cleveland Heart Disease dataset** and compares models on **acc
 
 ---
 
-## 🗂️ Project Structure
----
-heart-disease-ml/
-├─ data/                 # dataset (CSV)
-├─ src/
-│  ├─ train.py           # main training & evaluation script
-├─ outputs/
-│  ├─ models/            # saved models (.joblib)
-│  └─ figures/           # confusion matrices, plots
-├─ requirements.txt
-└─ README.md
-
 ## ⚙️ Installation & Setup
 ---
 ```bash
@@ -56,14 +44,20 @@ imbalanced-learn
 matplotlib
 seaborn
 joblib
+
 ---
 
-## 📊 Summary of Model Performance
+## Summary of Model Performance
+--
+
+| Model                  | Accuracy | Precision (Class 0 / 1) | Recall (Class 0 / 1) | Notes |
+|-------------------------|----------|--------------------------|-----------------------|-------|
+| **Random Forest**       | **84%**  | – / 75%                 | **91%** / 75%         | Best overall, very strong at detecting healthy cases |
+| **Logistic Regression** | **83.5%**| >85% both classes        | Slightly lower for Class 1 | Stable, interpretable, balanced |
+| **KNN (k=19)**          | 82.4%    | 80% / 85%                | 87% / 77%             | Reliable, good balance |
+| **SVM (RBF)**           | 80.2%    | Competitive              | 85% / 75%             | Bias toward majority class (healthy) |
+| **Decision Tree**       | 78%      | 68% (Class 1 low)        | 87% / 83%             | Higher false positives |
+
 ---
-	•	Random Forest was the top performer (84% accuracy), excelling at detecting healthy individuals (Class 0 recall = 91%) while maintaining balanced metrics for diseased cases (Class 1 precision/recall = 75%).
-	•	Logistic Regression closely followed (83.5% accuracy), showing stable precision and recall above 85% overall, though it had a slight drop in recall for Class 1, leading to some missed disease cases.
-	•	K-Nearest Neighbors achieved 82.4% accuracy, with well-balanced metrics (precision: 80%/85%, recall: 87%/77%), confirming its reliability in binary classification.
-	•	Support Vector Machine (RBF) reached 80.2% accuracy, performing strongly on healthy cases (Class 0 recall = 85%) but lower on disease cases (Class 1 recall = 75%), suggesting bias toward the majority class.
-	•	Decision Tree had the lowest accuracy (78%), with decent recall for Class 1 (83%) but poor precision (68%), indicating higher false positives.
 
 
