@@ -1,5 +1,5 @@
 ## 🫀A Data-Driven Approach to Cardiovascular Disease Prediction
-Goal. Build and compare classic ML models to predict heart disease using the Cleveland/UCI dataset.
+Goal: Build and compare classic ML models to predict heart disease using the Cleveland/UCI dataset.
 Models. KNN, Logistic Regression, SVM (RBF), Decision Tree, Random Forest.
 Highlights. 70/30 train–test split, z-score scaling, class rebalancing via oversampling, confusion-matrix based evaluation (Accuracy, Precision, Recall, F1).
 
