@@ -56,8 +56,8 @@ imbalanced-learn
 matplotlib
 seaborn
 joblib
-
 ---
+
 ## 📊 Summary of Model Performance
 ---
 	•	Random Forest was the top performer (84% accuracy), excelling at detecting healthy individuals (Class 0 recall = 91%) while maintaining balanced metrics for diseased cases (Class 1 precision/recall = 75%).
