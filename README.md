@@ -11,3 +11,55 @@ Highlights. 70/30 train–test split, z-score scaling, class rebalancing via ove
 	•	Decision Tree had the lowest accuracy (78%), with decent recall for Class 1 (83%) but poor precision (68%), indicating higher false positives.
 
 **👉 Random Forest and Logistic Regression emerged as the most effective models, balancing interpretability, predictive strength, and recall.**
+
+# 🫀 Heart Disease Prediction using Machine Learning
+
+This project applies multiple **Machine Learning algorithms** to predict the likelihood of cardiovascular disease based on clinical attributes.  
+It uses the **UCI Cleveland Heart Disease dataset** and compares models on **accuracy, precision, recall, and F1-score**.
+
+---
+
+## 📌 Project Overview
+- **Goal:** Predict heart disease (target: 1 = disease, 0 = no disease).  
+- **Dataset:** UCI Cleveland Heart Disease dataset .  
+- **Models Implemented:**
+  - K-Nearest Neighbors (KNN)
+  - Logistic Regression
+  - Support Vector Machine (SVM – RBF kernel)
+  - Decision Tree
+  - Random Forest  
+
+- **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score, Confusion Matrix.  
+- **Highlight:** Random Forest and Logistic Regression both achieved ~84% accuracy on the test set .
+
+---
+
+## 🗂️ Project Structure
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone repo
+git clone https://github.com/your-username/heart-disease-ml.git
+cd heart-disease-ml
+
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate   # Mac/Linux
+.venv\Scripts\activate      # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+requirements.txt should include:
+
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+matplotlib
+seaborn
+joblib
+
+
