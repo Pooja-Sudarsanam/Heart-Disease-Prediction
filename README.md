@@ -47,7 +47,7 @@ joblib
 
 ---
 
-## Summary of Model Performance
+## 📊 Summary of Model Performance
 --
 
 | Model                  | Accuracy | Precision (Class 0 / 1) | Recall (Class 0 / 1) | Notes |
